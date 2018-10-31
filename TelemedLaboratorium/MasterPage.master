@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+         </div>
+              <div style="margin-left:auto; margin-right:auto; text-align:center;">
+            <asp:Image ID="Image1" runat="server"   src="images/serce.png"  />
+            <asp:Label ID="lNazwa" runat="server" Text="Aktywność fizyczna" ForeColor="#000099" Font-Size="XX-Large" Font-Bold="True" Font-Italic="False" Font-Names="Arial"></asp:Label>
+             <asp:Image ID="Image2" runat="server"   src="images/serce.png"  />
+           
+
+        </div>
+            <div style="margin-left:auto; margin-right:auto; margin-top:100px; text-align:center;">
+                <asp:Button ID="btnSport" runat="server" onclick="btnSport_Click" Text="Uprawiam sport" Font-Bold="True" BackColor="#66CCFF" Font-Size="Larger"  Height="60px" />
+              
+
+</div>
+        <div style="margin-left:auto; margin-right:auto; margin-top:100px; text-align:center;">
+                 <asp:Button ID="btnLen" runat="server" onclick="btnLen_Click" Text="Nie mam czasu, tylko sprzątam" Font-Bold="True" BackColor="#66CCFF" Font-Size="Larger" Height="60px" />
+
+</div>
+
+
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+   
+
+        </asp:ContentPlaceHolder>
+   
+    </form>
+</body>
+</html>
